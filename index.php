@@ -4,8 +4,8 @@ if(isset($_GET[FirstName])){//show feedback
 echo $_GET[FirstName];
 
 
-}else{
-echo'//show form
+}else{//show form
+echo'
 <form action="">
 First Name<input text="text" name="FirstName" />
 <br />
