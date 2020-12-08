@@ -1,28 +1,25 @@
 <?php
 //echo '<p>This is PHP!</p>';
-if(isset($_GET[FirstName])){//show feedback
- //echo $_GET[FirstName];
-  echo'<pre>';
-  var_dump($_GET);
-  
-  echo'<pre>';
-  
-  ';
+if(isset($_GET["FirstName"])){//show feedback
+ //echo $_GET["FirstName"];
+ echo '<pre>';
+ var_dump($_GET);
+ echo '</pre>';
+ 
 }else{//show form
- echo'
+ echo '
  <form action="">
- First Name<input text="text" name="FirstName" />
- <br />
+ <p>First Name <input type="text" name="FirstName" /></p>
+ <p>Last Name <input type="text" name="LastName" /></p>
+ <p>Favorite Color</p>
+ <p><input type="radio" name="FavoriteColor" value="red" />Red</p>
+ <p><input type="radio" name="FavoriteColor" value="green" />Green</p>
+ <p><input type="radio" name="FavoriteColor" value="blue" />Blue</p>
  <input type="submit">
- </form>
-';
+  </form>
+ ';
 }
-
-
-
-
-
-
 ?>
+
 
 
